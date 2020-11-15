@@ -5,6 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    types: [ opened, edited ]
 
 env:
   CARGO_TERM_COLOR: always
@@ -82,13 +83,3 @@ jobs:
       with:
         command: clippy
         args: --all --all-features -- -D warnings
-
-  readme:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install cargo-readme
-      command: cargo
-      args: install cargo-readme
-    - name: Check that readme is up-to-date
-      run: [[ ! $(cargo readme | diff - README.md) ]]
