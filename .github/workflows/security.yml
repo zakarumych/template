@@ -1,13 +1,9 @@
 name: Security audit
 
 on:
-  push:
-    branches: [ master ]
-    paths:
-      - '**/Cargo.toml'
   pull_request:
+    types: [ labeled ]
     branches: [ master ]
-    types: [ opened, edited ]
     paths:
       - '**/Cargo.toml'
 
@@ -16,6 +12,7 @@ env:
 
 jobs:
   security_audit:
+    if: ${{ github.event.label.name == 'ready-to-merge' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

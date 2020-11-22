@@ -1,14 +1,8 @@
 name: Generated readme check
 
 on:
-  push:
-    branches: [ master ]
-    paths: 
-      - 'README.md'
-      - 'README.tpl'
-      - 'lib.rs'
   pull_request:
-    types: [ opened, edited ]
+    types: [ labeled ]
     branches: [ master ]
     paths: 
       - 'README.md'
@@ -20,6 +14,7 @@ env:
 
 jobs:
   readme:
+    if: ${{ github.event.label.name == 'ready-to-merge' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
