@@ -6,8 +6,6 @@
 [![MIT/Apache](https://img.shields.io/badge/license-MIT%2FApache-blue.svg?style=for-the-badge)](COPYING)
 ![loc](https://img.shields.io/tokei/lines/github/zakarumych/{{project-name}}?style=for-the-badge)
 
-{{"{{readme}}"}}
-
 ## License
 
 Licensed under either of
@@ -20,7 +18,3 @@ at your option.
 ## Contributions
 
 Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
-
-## Donate
-
-[![Become a patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/zakarum)
