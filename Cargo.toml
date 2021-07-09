@@ -7,5 +7,4 @@ license = "MIT OR Apache-2.0"
 documentation = "https://docs.rs/{{project-name}}"
 homepage = "https://github.com/zakarumych/{{project-name}}"
 repository = "https://github.com/zakarumych/{{project-name}}"
-
-[dependencies]
+readme = "README.md"
