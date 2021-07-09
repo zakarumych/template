@@ -2,10 +2,10 @@
 name = "{{project-name}}"
 version = "0.0.0"
 edition = "2018"
-authors = ["{{authors}}"]
+authors = ["Zakarum <zakarumych@ya.ru>"]
 license = "MIT OR Apache-2.0"
 documentation = "https://docs.rs/{{project-name}}"
-homepage = "https://github.com/{{authors}}/{{project-name}}"
-repository = "https://github.com/{{authors}}/{{project-name}}"
+homepage = "https://github.com/zakarumych/{{project-name}}"
+repository = "https://github.com/zakarumych/{{project-name}}"
 
 [dependencies]
