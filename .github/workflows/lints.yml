@@ -27,7 +27,7 @@ jobs:
         command: fmt
         args: --all -- --check
 
-  cllipy:
+  clippy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
