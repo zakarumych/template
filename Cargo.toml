@@ -2,7 +2,7 @@
 name = "{{project-name}}"
 version = "0.0.0"
 edition = "2018"
-authors = ["Zakarum <zakarumych@ya.ru>"]
+authors = ["Zakarum <zaq.dev@icloud.com>"]
 license = "MIT OR Apache-2.0"
 documentation = "https://docs.rs/{{project-name}}"
 homepage = "https://github.com/zakarumych/{{project-name}}"
