@@ -2,7 +2,7 @@ name: Lints
 
 on:
   pull_request:
-    branches: [ main ]
+    types: [ opened, edited ]
     paths: 
       - '**.rs'
       - '**/Cargo.toml'
